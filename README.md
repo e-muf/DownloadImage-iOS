@@ -1,6 +1,8 @@
 # DownloadImage-iOS
 
-Download Image using NSOperation
+@author: Emanuel Flores Martínez
+
+Download Image using NSOperation.
 
 ## Preview
 
