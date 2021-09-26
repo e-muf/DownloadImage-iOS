@@ -6,4 +6,4 @@ Download Image using NSOperation
 
 ![preview](doc-assets/preview.gif)
 
-![preview](doc-assets/final-preview.png)
+<img src="doc-assets/final-preview.png" alt="final-prev" width="300">
