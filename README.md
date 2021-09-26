@@ -2,6 +2,6 @@
 
 Download Image using NSOperation
 
-## Preview
+## Preview
 
 ![preview](doc-assets/preview.gif)
