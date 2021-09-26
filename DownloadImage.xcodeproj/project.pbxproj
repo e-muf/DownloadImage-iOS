@@ -13,6 +13,8 @@
 		88D31DDA27004CF900549CBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D31DD827004CF900549CBD /* Main.storyboard */; };
 		88D31DDC27004CFA00549CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D31DDB27004CFA00549CBD /* Assets.xcassets */; };
 		88D31DDF27004CFA00549CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D31DDD27004CFA00549CBD /* LaunchScreen.storyboard */; };
+		88D31DE92700535000549CBD /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D31DE82700535000549CBD /* Downloader.swift */; };
+		88D31DEB27005A5A00549CBD /* DetailedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D31DEA27005A5A00549CBD /* DetailedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		88D31DDB27004CFA00549CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88D31DDE27004CFA00549CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88D31DE027004CFA00549CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D31DE82700535000549CBD /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		88D31DEA27005A5A00549CBD /* DetailedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				88D31DDB27004CFA00549CBD /* Assets.xcassets */,
 				88D31DDD27004CFA00549CBD /* LaunchScreen.storyboard */,
 				88D31DE027004CFA00549CBD /* Info.plist */,
+				88D31DE82700535000549CBD /* Downloader.swift */,
+				88D31DEA27005A5A00549CBD /* DetailedImage.swift */,
 			);
 			path = DownloadImage;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D31DE92700535000549CBD /* Downloader.swift in Sources */,
 				88D31DD727004CF900549CBD /* ViewController.swift in Sources */,
+				88D31DEB27005A5A00549CBD /* DetailedImage.swift in Sources */,
 				88D31DD327004CF900549CBD /* AppDelegate.swift in Sources */,
 				88D31DD527004CF900549CBD /* SceneDelegate.swift in Sources */,
 			);

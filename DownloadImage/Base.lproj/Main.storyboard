@@ -1,24 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DownloadImage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mwj-Ym-rSC">
+                                <rect key="frame" x="57" y="94" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="LkJ-om-uGa"/>
+                                    <constraint firstAttribute="width" constant="300" id="si2-KX-BfO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKg-kg-36Q" userLabel="Name Label">
+                                <rect key="frame" x="57" y="434" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primer Aparición:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fum-Xl-kZV" userLabel="First Appearance Label">
+                                <rect key="frame" x="57" y="475" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Año: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJY-3g-aAF" userLabel="Year Label">
+                                <rect key="frame" x="57" y="516" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LJY-3g-aAF" firstAttribute="leading" secondItem="YKg-kg-36Q" secondAttribute="leading" id="4fo-gI-I7O"/>
+                            <constraint firstItem="YKg-kg-36Q" firstAttribute="trailing" secondItem="LJY-3g-aAF" secondAttribute="trailing" id="As5-m8-lcJ"/>
+                            <constraint firstItem="LJY-3g-aAF" firstAttribute="top" secondItem="fum-Xl-kZV" secondAttribute="bottom" constant="20" id="Duo-Ng-sUp"/>
+                            <constraint firstItem="YKg-kg-36Q" firstAttribute="top" secondItem="mwj-Ym-rSC" secondAttribute="bottom" constant="40" id="IHn-RG-Ovc"/>
+                            <constraint firstItem="mwj-Ym-rSC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MD4-9A-zM5"/>
+                            <constraint firstItem="YKg-kg-36Q" firstAttribute="trailing" secondItem="fum-Xl-kZV" secondAttribute="trailing" id="Q7z-Ep-uIM"/>
+                            <constraint firstItem="YKg-kg-36Q" firstAttribute="leading" secondItem="mwj-Ym-rSC" secondAttribute="leading" id="ZLG-Ya-TVx"/>
+                            <constraint firstItem="mwj-Ym-rSC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bAX-2I-36r"/>
+                            <constraint firstItem="fum-Xl-kZV" firstAttribute="top" secondItem="YKg-kg-36Q" secondAttribute="bottom" constant="20" id="gQj-dA-7kZ"/>
+                            <constraint firstItem="fum-Xl-kZV" firstAttribute="leading" secondItem="YKg-kg-36Q" secondAttribute="leading" id="hHr-we-Wku"/>
+                            <constraint firstItem="mwj-Ym-rSC" firstAttribute="trailing" secondItem="YKg-kg-36Q" secondAttribute="trailing" id="lr5-dC-XYs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstAppearanceLabel" destination="fum-Xl-kZV" id="c66-4y-Oaj"/>
+                        <outlet property="imageView" destination="mwj-Ym-rSC" id="FAL-7G-8th"/>
+                        <outlet property="nameLabel" destination="YKg-kg-36Q" id="z1Z-LB-GR3"/>
+                        <outlet property="yearLabel" destination="LJY-3g-aAF" id="ezn-hb-Qlh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
